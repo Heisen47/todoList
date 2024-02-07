@@ -20,7 +20,7 @@ const TodoBody = () => {
             To - do lists of the day    
         </div>
         <div className='`todoBody`'>
-            <input type="text" className='input' placeholder='Your todo of the day' onChange={(e)=>setTodo(e.target.value)}/>
+            <input type="text" className='input' value={todo} placeholder='Your todo of the day' onChange={(e)=>setTodo(e.target.value)}/>
             <button className='btn' onClick={addTodo}> + </button>
             {console.log(todoList)}
         </div>
