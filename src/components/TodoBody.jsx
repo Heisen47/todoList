@@ -25,7 +25,7 @@ const TodoBody = () => {
             {console.log(todoList)}
         </div>
         <div className="finalList">
-            <TodoList todos = {todoList}/>
+            <TodoList todos = {todoList} setTodoList = {setTodoList}/>
         </div>
     </div>
   )
