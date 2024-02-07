@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 80px;
+    background-color: burlywood;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.FooterContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid black;
+    height: 80px;
+    background-color: burlywood;
 }
 
-.App-link {
-  color: #61dafb;
+.footer{
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ContainerBody{
+   background: aquamarine;
+   height: 562px;
+}
+
+.TodoContainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 380px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.yourTodo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    background-color:burlywood;
+}
+
+.todoBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px; 
+}
+
+.input{
+    width: 232px;
+    height: 25px;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px;
+}
+
+.btn{
+    height: 34px;
+    width: 30px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    gap: 32%;
+    padding: 8px;
+}
+
+.todoListContainer{
+    background-color: blanchedalmond;
+    height: 270px;
+    margin-top: 15px;
+    border: 1px solid brown;
 }
