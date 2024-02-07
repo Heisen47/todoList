@@ -88,6 +88,7 @@
     /* justify-content: space-around; */
     gap: 32%;
     padding: 8px;
+    border-bottom: 1px solid brown;
 }
 
 .todoListContainer{

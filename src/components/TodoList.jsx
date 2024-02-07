@@ -12,8 +12,7 @@ const TodoList = ({todos , setTodoList}) => {
       {todos.map((todo, index) => (
         <div className="list" key={index}>
           <button className="btn" onClick={()=> handleDelete(index)}>-</button>
-          <span>{todo}</span>
-          <hr />
+          <span className="todo">{todo.charAt(0).toUpperCase() + todo.slice(1)}</span>
         </div>
       ))}
     </div>
